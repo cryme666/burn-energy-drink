@@ -1,0 +1,40 @@
+{
+    "products": [
+      {
+        "url": "original.webp",
+        "description": "Original",
+        "price": 199
+      },
+      {
+        "url": "green.jpg",
+        "description": "Sour Twist",
+        "price": 705
+      },
+      {
+        "url": "purple.jpg",
+        "description": "Passion Punch",
+        "price": 666
+      },
+      {
+        "url": "orange.png",
+        "description": "Mango",
+        "price": 700
+      },
+      {
+        "url": "yellow.jpg",
+        "description": "Lemon Ice",
+        "price": 100
+      },
+      {
+        "url": "zero.jpg",
+        "description": "Zero",
+        "price": 987
+      },
+      {
+        "url": "blue-refresh.jpg",
+        "description": "Blue Refresh",
+        "price": 321
+      }
+    ]
+  }
+  

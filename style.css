@@ -1,5 +1,12 @@
+html { overflow-y: scroll; }
+
 body {
     font-family: 'Noto Serif JP', serif;
+    /* overflow: hidden; */
+}
+a{
+    text-decoration: none;
+
 }
 
 
@@ -37,6 +44,13 @@ body {
 
 }
 
+#bag
+{
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+
 .main-menu>li {
     display: inline-flex;
 }
@@ -46,7 +60,7 @@ body {
 }
 
 .main-menu>li>a {
-    padding: 0 0 20px 0;
+    padding: 0 0 10px 0;
     position: relative;
     text-transform: uppercase;
     color: #ffffff;
@@ -54,6 +68,7 @@ body {
     letter-spacing: 0.2px;
     font-size: 15px;
     text-decoration: none;
+    
 }
 
 .main-menu>li>a:hover {
@@ -317,3 +332,188 @@ button:active {
     margin-left: 110px;
     
 }
+
+.test
+{
+    color: black;
+}
+
+#sortSelect
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -100px;
+    border-radius: 20px;
+}
+
+#SelectStatistic
+{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    /* margin-top: 100px; */
+}
+
+#statistic
+{
+    display: none;
+}
+
+
+
+.default
+{
+    display: none;
+}
+
+#basket-total
+{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#clear
+{
+    font-size: 14px;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.3s ease;
+
+}
+#clear:hover{
+        color: red;
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0);
+        transform: translateY(0px);
+    
+
+}
+
+.bobik
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.zagolovok
+{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.date
+{
+    text-align: center;
+    font-size: 15px;
+    margin-top: -20px;
+    margin-bottom: 0;
+
+}
+
+.news-text>p{
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#scroll-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 16px;
+    background-color:rgb(217, 137, 18);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  
+  #scroll-to-top-btn:hover {
+    background-color: #06b300;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 10);
+    transform: translateY(-2px);
+}
+
+#profile
+{
+    margin-top: 7px;
+    display: flex;
+    height: 30px;
+    
+    
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    margin-top:80px;
+    background-color: rgb(220, 220, 220);
+    height: 600px;
+    width: 900px; 
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10% 30%;
+    box-shadow: 0px 0px 20px 0.6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.container:hover
+{
+    box-shadow: 0px 0px 20px 0.6px rgba(0, 0, 0, 0.5);
+
+}
+
+.container h1
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    width: 200px;
+  }
+
+  .other_links
+  {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+
+  }
+
+  
+
+  

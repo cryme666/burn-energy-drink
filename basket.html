@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Basket</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+
+
+<body style="overflow: hidden;">
+    <button class = "load-buttons" id="scroll-to-top-btn">UP</button>
+
+    <ul class="main-menu">
+        <img class="mikro-img" src="burn_logo.png" alt="Вибачте, пропив лого">
+        
+        <li><a href="index.html" class = "menu_text" class = "text_main">Main</a></li>  
+        <li class="menu-children">
+
+            <a href="#url" class = "menu_text" >Service</a>
+            <ul>
+                <li><a href="#url ">Purchase</a></li>
+                <li><a href="#url">Something...</a></li>        
+            </ul>
+        </li>
+        <li><a href="news.html" class = "menu_text">News</a></li>
+        <li><a href="#url" class = "menu_text">Photogalery</a></li>  
+        <li class="menu-children" class = "menu_text">
+            <a href="#url" class = "menu_text">Contacts</a>
+            <ul>
+                <li><a href="#url">Request</a></li>
+                <li><a href="#url">About us</a></li>        
+            </ul>   
+        <li class = "active">
+            <a href = "#"><img id = "bag" src = "shopping-bag.png">
+            </a></li>
+            <span id="basket-total">0 UAN</span>
+            <button id = "clear">Clear</button>
+        <li style = "margin-left: 30px;margin-top: 5px;"><a href = "login.html"><img id = "profile" src = "profile.png"></a></li>
+
+    </ul>
+    
+    <select id="sortSelect" onchange="handleSortChange()">
+        <option class="default" value="default">default</option>
+        <option value="name">Sort by name</option>
+        <option value="price">Sort by price</option>
+      </select>
+     
+      <div class="image-gallery"></div>
+
+      <div id = "statistic">
+          <p style = "text-align: center; margin-top: 200px;">Choose type of statistic</p>
+         
+          <select id="SelectStatistic" onchange="handleSelectStatistic()">
+            <option class="default" value="default">none</option>
+            <option value="pie">pie</option>
+            <option value="bar">bar</option>
+            <option value="radar">radar</option>
+      </select>
+
+      </div>
+      
+
+      <div><canvas id="myChart" style="width:100%;max-width:700px; display: flex; margin-left: auto; margin-right: auto;"></canvas></div>
+      <div><canvas id="myBar"   style="width:100%;max-width:700px; display: flex; margin-left: auto; margin-right: auto;"></canvas></div>
+      <div><canvas id="myRadar" style="width:100%;max-width:700px; display: flex; margin-left: auto; margin-right: auto;"></canvas></div>
+
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+     <script src="script-basket.js"></script>
+      
+      
+
+      
+
+</body>
